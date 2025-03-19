@@ -209,3 +209,17 @@ nav ul li a.active {
   line-height: 30px;
   margin-top:0px;
 }
+
+.image-process {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.palette-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
