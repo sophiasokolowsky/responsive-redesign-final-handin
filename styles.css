@@ -1,6 +1,6 @@
 body {
-  background-color: #d5afb2;
-  color: rgb(46, 34, 21);
+  background-color: #86212871;
+  color: rgb(7, 4, 1);
   font-family: serif;
   margin: 0;
   padding: 0;
@@ -12,6 +12,7 @@ body {
 
 header {
   background-color: #582232;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +64,7 @@ nav ul li a.active {
 .intro h1 {
   font-size: 46px;
   font-weight: bold;
-  color: rgb(46, 34, 21);
+  color: rgb(7, 4, 1);
   margin-bottom: 15px;
 }
 
@@ -83,11 +84,11 @@ nav ul li a.active {
 
 .preview {
   background-color: #582232;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 25px;
   border-radius: 12px;
   text-align: center;
   width: 260px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -108,6 +109,7 @@ nav ul li a.active {
 
 .button {
   display: inline-block;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   margin-top: 15px;
   padding: 10px 15px;
   background-color: #d5afb2;
@@ -115,7 +117,6 @@ nav ul li a.active {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease-in-out;
 }
 
 .button:hover {
@@ -127,7 +128,7 @@ nav ul li a.active {
 .title {
   text-align: center;
   margin-top: 40px;
-  max-width: 700px;
+  max-width: 80%;
 }
 
 .title h1 {
@@ -154,7 +155,6 @@ nav ul li a.active {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-  transition: background 0.3s ease-in-out;
 }
 
 .title a:hover {
@@ -163,15 +163,16 @@ nav ul li a.active {
 }
 
 .image-box {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   margin-top: 20px;
   margin-bottom: 40px;
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin: 10px auto;
 }
 
 .og-web-image {
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -184,23 +185,28 @@ nav ul li a.active {
 }
 
 .button-1 {
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   border-radius: 10px;
-  width: 600px;
+  width: 700px;
   height: 100px;
   text-align: center;
   background-color: rgb(46, 34, 21);
   color:#F4F6F4; 
-  margin-top: 15px;
+  margin-top: 20px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-.button-1:hover {background-color: #f4f6f480; color:rgb(46, 34, 21)}
+.button-1:hover {
+  background-color: #f4f6f480; 
+  color:rgb(46, 34, 21);
+  box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+}
 
 .hidden-box {
   display: none;
-  background-color:#F4F6F4;
-  color: rgb(46, 34, 21);
+  background-color:#a774838a;
+  color: rgb(14, 7, 1);
   padding: 15px;
   border-radius: 6px;
   text-align: center;
@@ -208,18 +214,109 @@ nav ul li a.active {
   max-width: 550px;
   line-height: 30px;
   margin-top:0px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*process page*/
 .image-process {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .palette-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  text-align: center;
+  margin-top: 30px;
+  max-width: 70%;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.mockup-title {
+  font-size: 22px;
+  font-weight: 600;
+  align-self:flex-start;
+  margin-bottom: 0px;
+}
+
+.mockup-box {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: grid;
+  gap: 3px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.mockup-1 {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
+.mockup-2 {
+  max-width: 90%;
+  height: auto;
+  display: block;
+}
+
+.mockup-3 {
+  max-width: 80%;
+  height: auto;
+  display: block;
+}
+
+/*redesign page*/
+
+.intro a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  background-color: #582232;
+  color: #F4F6F4;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.intro a:hover {
+  background-color: #F4F6F4;
+  color: rgb(46, 34, 21);
+}
+
+.final-box {
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-desktop {
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+
+.final-tablet-and-phone {
+  max-width: 100%;
+  height:auto;
+  display: block;
+}
+
+
 
